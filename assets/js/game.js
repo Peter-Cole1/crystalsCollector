@@ -7,8 +7,38 @@
     //math.floor(math.random()*x) will generate a number. Assign this value to the "goalNumber" div. Display the text with .innerHTML. 
     //Set "mainCounter" to value "0"
 
+//-------------------VARIABLES--------------------------
+    var goalNumber = [Math.floor(Math.random() * 31)];    
+    var counterNumber = [0];
+    var wins = [0];
+    var losses = [0];
     
 
+    var crystal1 = [Math.floor(Math.random() * 10)];
+    var crystal2 = [Math.floor(Math.random() * 10)];
+    var crystal3 = [Math.floor(Math.random() * 10)];
+    var crystal4 = [Math.floor(Math.random() * 10)];
+
+    let display = ""
+//------------------------------------------------------
+
+// idt this function does anything atm
+function startGame()
+{
+    var counterNumber = [];
+    var goalNumber = [];
+    var crystal1 = [];
+    var crystal2 = [];
+    var crystal3 = [];
+    var crystal4 = [];
+
+    return crystal1;
+    
+}
+
+
+
+console.log(goalNumber);
 //Randomly generate numbers for each of the crystals
 
     //math.floor(math.random()*x) to generate numbers for each crystal. Possibly set up condition where each crystal has a different number
