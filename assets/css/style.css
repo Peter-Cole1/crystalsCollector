@@ -1,0 +1,74 @@
+/*      Everything      */
+
+.titlebar, .logo, .goalNumber, .wins, .losses, .mainCounter, .ruby, .sapphire, .topaz, .emerald
+{
+    text-align: center;
+}
+
+
+
+
+
+/*      MAIN COMPONENTS     */
+
+.titlebar
+{
+    background-color: lightblue;
+    height: 100px;
+}
+
+.logo
+{
+    background-color: lightgreen;
+    height: 200px;
+}
+
+.goalNumber 
+{
+    background-color: lightcoral;
+    height: 130px;
+}
+
+.wins, .losses
+{
+    background-color: lightseagreen;
+    height: 50px;
+}
+
+.mainCounter 
+{
+    background-color: lightsalmon;
+    height: 350px;
+}
+
+
+
+
+
+/*      CRYSTALS        */
+
+.ruby
+{
+    background-color: red;
+}
+
+.sapphire
+{
+    background-color: blue;
+}
+
+.topaz 
+{
+    background-color: yellow;
+}
+
+.emerald
+{
+    background-color: green;
+}
+
+/*      Crystal Group       */
+.ruby, .sapphire, .topaz, .emerald
+{
+    height: 100px;
+}
