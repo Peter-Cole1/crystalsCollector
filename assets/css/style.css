@@ -27,18 +27,24 @@
 {
     background-color: lightcoral;
     height: 130px;
+    padding-top: 17px;
+    font-size: 60px;
 }
 
 #wins, #losses
 {
     background-color: lightseagreen;
     height: 50px;
+    font-size: 20px;
+    padding-top: 10px;
 }
 
 #mainCounter 
 {
     background-color: lightsalmon;
     height: 350px;
+    font-size: 120px;
+    padding-top: 80px;
 }
 
 
