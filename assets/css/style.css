@@ -1,6 +1,6 @@
 /*      Everything      */
 
-.titlebar, .logo, .goalNumber, .wins, .losses, .mainCounter, .ruby, .sapphire, .topaz, .emerald
+.titlebar, .logo, #goalNumber, #wins, #losses, #mainCounter, .ruby, .sapphire, .topaz, .emerald
 {
     text-align: center;
 }
@@ -23,19 +23,19 @@
     height: 200px;
 }
 
-.goalNumber 
+#goalNumber 
 {
     background-color: lightcoral;
     height: 130px;
 }
 
-.wins, .losses
+#wins, #losses
 {
     background-color: lightseagreen;
     height: 50px;
 }
 
-.mainCounter 
+#mainCounter 
 {
     background-color: lightsalmon;
     height: 350px;

@@ -11,9 +11,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- JS -->
-    <script src="assets/js/game.js"></script>
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -43,7 +40,7 @@
         <div class="col-lg-5 bumper"></div>
 
           <div class="col-lg-2 goalBox">
-            <div class="goalNumber">Goal</div>
+            <div id="goalNumber">Goal</div>
           </div>
 
         </div>
@@ -52,28 +49,30 @@
       <div class="row winLoss">
         <div class="col-lg-3 bumper"></div>
 
-        <div class="col-lg-1 wins">Wins</div>
+        <div class="col-lg-1" id="wins" >Wins</div>
 
         <div class="col-lg-4 bumper"></div>
 
-        <div class="col-lg-1 losses">Losses</div>
+        <div class="col-lg-1" id="losses" >Losses</div>
 
       </div>
 
       <!-- Main Counter -->
       <div class="row">
         <div class="col-lg-4 bumper"></div>
-        <div class="col-lg-4 mainCounter">Main Counter</div>
+        <div class="col-lg-4" id="mainCounter">Main Counter</div>
       </div>
 
       <!-- Crystals -->
       <div class="row">
           <div class="col-lg-4 bumper"></div>
 
-          <div class="col-lg-1 ruby" onclick="crystalClick()">Ruby</div>
-          <div class="col-lg-1 sapphire">Sapphire</div>
-          <div class="col-lg-1 topaz">Topaz</div>
-          <div class="col-lg-1 emerald">Emerald</div>
+          <div class="col-lg-1 ruby" onclick="crystalClick(crystal1)">Ruby</div>
+          <div class="col-lg-1 sapphire" onclick="crystalClick(crystal2)">Sapphire</div>
+          <div class="col-lg-1 topaz" onclick="crystalClick(crystal3)">Topaz</div>
+          <div class="col-lg-1 emerald" onclick="crystalClick(crystal4)">Emerald</div>
+
+
 
       </div>
   
@@ -81,7 +80,8 @@
 
 
     
-
+    <!-- JS -->
+    <script src="assets/js/game.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

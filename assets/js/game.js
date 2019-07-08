@@ -8,36 +8,59 @@
     //Set "mainCounter" to value "0"
 
 //-------------------VARIABLES--------------------------
-    var goalNumber = [Math.floor(Math.random() * 31)];    
-    var counterNumber = [0];
-    var wins = [0];
-    var losses = [0];
-    
+    var mainCounterDisplay = document.getElementById('mainCounter');
+    var goalNumberDisplay = document.getElementById('goalNumber');
+    var winDisplay = document.getElementById('wins');
+    var lossesDisplay = document.getElementById('losses');
+    var goalNumber;
+    var counterNumber;
+    var wins = 0;
+    var losses = 0;
 
-    var crystal1 = [Math.floor(Math.random() * 10)];
-    var crystal2 = [Math.floor(Math.random() * 10)];
-    var crystal3 = [Math.floor(Math.random() * 10)];
-    var crystal4 = [Math.floor(Math.random() * 10)];
+    var crystal1;
+    var crystal2;
+    var crystal3;
+    var crystal4;
 
-    let display = ""
+    startGame();
+
 //------------------------------------------------------
 
 // idt this function does anything atm
-/*function startGame()
+function startGame()
 {
-    var counterNumber = [];
-    var goalNumber = [];
-    var crystal1 = [];
-    var crystal2 = [];
-    var crystal3 = [];
-    var crystal4 = [];
+    goalNumber = Math.floor(Math.random() * 20) + 25;
+    counterNumber = 0;
+    crystal1 = Math.floor(Math.random() * 9) + 1;
+    crystal2 = Math.floor(Math.random() * 9) + 1;
+    crystal3 = Math.floor(Math.random() * 9) + 1;
+    crystal4 = Math.floor(Math.random() * 9) + 1;
 
-    return crystal1, crystal2, crystal3, crystal4, counterNumber, goalNumber;
-    
-}*/
+    displayMainCounter();
+    displayGoalNumber();
+    displayWin();
+    displayLosses();
+}
 
-console.log(crystal1);
-console.log(counterNumber);
+
+console.log(crystal1, crystal2, crystal3, crystal4);
+console.log(goalNumber);
+
+function displayMainCounter(){
+    mainCounterDisplay.innerHTML = counterNumber;
+}
+
+function displayGoalNumber(){
+    goalNumberDisplay.innerHTML = goalNumber;
+}
+
+function displayWin(){
+    winDisplay.innerHTML = wins;
+}
+
+function displayLosses(){
+    lossesDisplay.innerHTML = losses;
+}
 
 //Randomly generate numbers for each of the crystals
 
@@ -52,17 +75,35 @@ console.log(counterNumber);
 
     //When clicked, trigger function that adds contained value to the "mainCounter" value
 
-function crystalClick(crystal1, counterNumber)
+function crystalClick(crystal)
 {
-    sum = (crystal1 + counterNumber);
-    alert(sum);
-    return;
+    counterNumber += crystal;
+    displayMainCounter();
+    checkIfWin();
+    console.log(counterNumber);
 }
+
+
 
 
 //If the main counter matches the goal number, the user will win, and the win counter will go up by 1
 
     //Set condition where if the "mainCounter" = "goalNumber", the "win" value adds 1 
+function checkIfWin(){
+    console.log("check win:");
+    if (counterNumber == goalNumber) {
+        wins += 1;
+        alert("You won!");
+        startGame();
+    }
+
+    if (counterNumber > goalNumber) {
+        losses += 1;
+        alert("You lost idiot");
+        startGame();
+    }
+}
+    
 
 //if the main counter hits a number higher than the goal number, the user will lose, and the lose counter will go up by 1
 
