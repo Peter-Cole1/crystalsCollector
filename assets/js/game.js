@@ -23,7 +23,7 @@
 //------------------------------------------------------
 
 // idt this function does anything atm
-function startGame()
+/*function startGame()
 {
     var counterNumber = [];
     var goalNumber = [];
@@ -32,13 +32,13 @@ function startGame()
     var crystal3 = [];
     var crystal4 = [];
 
-    return crystal1;
+    return crystal1, crystal2, crystal3, crystal4, counterNumber, goalNumber;
     
-}
+}*/
 
+console.log(crystal1);
+console.log(counterNumber);
 
-
-console.log(goalNumber);
 //Randomly generate numbers for each of the crystals
 
     //math.floor(math.random()*x) to generate numbers for each crystal. Possibly set up condition where each crystal has a different number
@@ -51,6 +51,14 @@ console.log(goalNumber);
 //On click, the crystals will add their respective value to the main counter
 
     //When clicked, trigger function that adds contained value to the "mainCounter" value
+
+function crystalClick(crystal1, counterNumber)
+{
+    sum = (crystal1 + counterNumber);
+    alert(sum);
+    return;
+}
+
 
 //If the main counter matches the goal number, the user will win, and the win counter will go up by 1
 
