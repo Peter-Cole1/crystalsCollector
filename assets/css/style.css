@@ -1,6 +1,6 @@
 /*      Everything      */
 
-.titlebar, .logo, #goalNumber, #wins, #losses, #mainCounter, .ruby, .sapphire, .topaz, .emerald
+.titlebar, #goalNumber, #wins, #losses, #mainCounter, .ruby, .sapphire, .topaz, .emerald
 {
     text-align: center;
 }
@@ -14,21 +14,21 @@
 .titlebar
 {
     background-color: lightblue;
-    height: 100px;
+    height: 150px;
+    padding-top: 3%;
 }
 
-.logo
-{
-    background-color: lightgreen;
-    height: 200px;
-}
 
 #goalNumber 
 {
-    background-color: lightcoral;
+    background-color: lightblue;
     height: 130px;
     padding-top: 17px;
-    font-size: 60px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    color: #e8667c;
 }
 
 #wins, #losses
@@ -37,44 +37,105 @@
     height: 50px;
     font-size: 20px;
     padding-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 10%;
+
 }
+
+#winLossBumper
+{
+    background-color: lightseagreen;
+    
+}
+
+#lossText
+{
+    text-align: right;
+    font-family: 'Press Start 2P', cursive;
+    vertical-align: 20%;
+}
+
+#winText
+{
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+
 
 #mainCounter 
 {
-    background-color: lightsalmon;
-    height: 350px;
+    background-color: lightblue;
+    height: 400px;
     font-size: 120px;
-    padding-top: 80px;
+    padding-top: 8%;
+    border-radius: 50%;
+    font-family: 'Press Start 2P', cursive;
+
 }
 
 
+.bg
+{
+    margin: 0;
+    background: url('../images/bg.jpg');
+    background-size: 110%;
+}
 
+#title
+{
+    font-family: 'Press Start 2P', cursive;
+    color: #e8667c;
+}
+
+#instructions
+{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80%;
+    padding-top: 2%;
+}
 
 
 /*      CRYSTALS        */
 
 .ruby
 {
-    background-color: red;
+    background-color: lightblue;
+    border-radius: 50%;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: lightblue;}
 }
 
 .sapphire
 {
-    background-color: blue;
+    background-color: #e89940;
+    border-radius: 50%;
 }
 
 .topaz 
 {
-    background-color: yellow;
+    background-color: #e88bdc;
+    border-radius: 50%;
 }
 
 .emerald
 {
-    background-color: green;
+    background-color: #e8667c;
+    border-radius: 50%;
 }
 
 /*      Crystal Group       */
 .ruby, .sapphire, .topaz, .emerald
 {
     height: 100px;
+}
+
+.crystalIMG
+{
+    padding-top: 8%;
 }

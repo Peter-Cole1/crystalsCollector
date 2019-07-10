@@ -43,8 +43,6 @@ function startGame()
 }
 
 
-console.log(crystal1, crystal2, crystal3, crystal4);
-console.log(goalNumber);
 
 function displayMainCounter(){
     mainCounterDisplay.innerHTML = counterNumber;
@@ -89,6 +87,7 @@ function crystalClick(crystal)
 //If the main counter matches the goal number, the user will win, and the win counter will go up by 1
 
     //Set condition where if the "mainCounter" = "goalNumber", the "win" value adds 1 
+
 function checkIfWin(){
     console.log("check win:");
     if (counterNumber == goalNumber) {
@@ -99,7 +98,7 @@ function checkIfWin(){
 
     if (counterNumber > goalNumber) {
         losses += 1;
-        alert("You lost idiot");
+        alert("You lost. If you're having trouble, you can pay to help your chances via micro-transactions. Coming soon!");
         startGame();
     }
 }
