@@ -85,7 +85,7 @@
 
 .bg
 {
-    margin: 0;
+    margin: auto;
     background: url('../images/bg.jpg');
     background-size: 110%;
 }
@@ -163,6 +163,7 @@
 .ruby, .sapphire, .topaz, .emerald
 {
     height: 100px;
+
 }
 
 .crystalIMG
@@ -194,45 +195,3 @@
 }
 
 @media (max-width: 768px)
-{
-#goalNumber{
-    height: 80px;
-    padding-top: 0;
-    font-size: 50px;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    color: #e8667c;
-    width: 4em;
-}
-
-#mainCounter{
-    height: 3em;
-    width: 3em;
-}
-
-.bg{
-    background-size: 300%;
-}
-
-.crystalIMG{
-    height: 30px;
-    width: 30px;
-    
-}
-
-#instructions{
-    margin: 1em;
-}
-
-#wins, #losses
-{
-    height: 50px;
-    font-size: 20px;
-    padding-top: 10px;
-    border-radius: 10%;
-    width: 3em;
-
-}
-
-
-}
